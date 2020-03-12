@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scene.gltf" type="PackedScene" id=1]
+
+[node name="Scene Root" index="0" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -52.623, 0, 0 )
+
+[node name="Scene Root" parent="." index="1" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -56.2266, -1.1706, -3.09616 )

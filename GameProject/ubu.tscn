@@ -1,0 +1,488 @@
+[gd_scene load_steps=75 format=2]
+
+[ext_resource path="res://Marble001_2K-JPG/Marble001_2K_Color.jpg" type="Texture" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Target.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ll/source/Scene3.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://ll/source/King_color2.png" type="Texture" id=5]
+[ext_resource path="res://ll/source/Princess.png" type="Texture" id=6]
+[ext_resource path="res://ll/source/Queen_color.png" type="Texture" id=7]
+[ext_resource path="res://ll/source/base_color.png" type="Texture" id=8]
+[ext_resource path="res://ll/source/Guest4_color.png" type="Texture" id=9]
+[ext_resource path="res://ll/source/Guest_m_1_color.png" type="Texture" id=10]
+[ext_resource path="res://ll/source/Guest_m_2_color.png" type="Texture" id=11]
+[ext_resource path="res://ll/source/flag_color.png" type="Texture" id=12]
+[ext_resource path="res://ll/textures/flag_color.png" type="Texture" id=13]
+[ext_resource path="res://new_spatialmaterial.tres" type="Material" id=14]
+[ext_resource path="res://ll/source/archer 2 attack_color.png" type="Texture" id=15]
+[ext_resource path="res://ll/source/archer attack_color.png" type="Texture" id=16]
+[ext_resource path="res://ll/source/Guest_m_4_color.png" type="Texture" id=17]
+[ext_resource path="res://Health_Pickup.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Turret.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Ammo_Pickup.tscn" type="PackedScene" id=20]
+
+[sub_resource type="PlaneMesh" id=1]
+size = Vector2( 100, 100 )
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 1 )
+
+[sub_resource type="ConcavePolygonShape" id=3]
+data = PoolVector3Array( 50, 0, 50, -50, 0, 50, 50, 0, -50, -50, 0, 50, -50, 0, -50, 50, 0, -50 )
+
+[sub_resource type="PlaneMesh" id=4]
+size = Vector2( 100, 50 )
+
+[sub_resource type="ConcavePolygonShape" id=5]
+data = PoolVector3Array( 50, 0, 25, -50, 0, 25, 50, 0, -25, -50, 0, 25, -50, 0, -25, 50, 0, -25 )
+
+[sub_resource type="PlaneMesh" id=6]
+size = Vector2( 100, 50 )
+
+[sub_resource type="ConcavePolygonShape" id=7]
+data = PoolVector3Array( 50, 0, 25, -50, 0, 25, 50, 0, -25, -50, 0, 25, -50, 0, -25, 50, 0, -25 )
+
+[sub_resource type="PlaneMesh" id=8]
+size = Vector2( 100, 50 )
+
+[sub_resource type="ConcavePolygonShape" id=9]
+data = PoolVector3Array( 50, 0, 25, -50, 0, 25, 50, 0, -25, -50, 0, 25, -50, 0, -25, 50, 0, -25 )
+
+[sub_resource type="PlaneMesh" id=10]
+size = Vector2( 100, 50 )
+
+[sub_resource type="ConcavePolygonShape" id=11]
+data = PoolVector3Array( 50, 0, 25, -50, 0, 25, 50, 0, -25, -50, 0, 25, -50, 0, -25, 50, 0, -25 )
+
+[sub_resource type="SpatialMaterial" id=12]
+albedo_texture = ExtResource( 5 )
+
+[sub_resource type="SpatialMaterial" id=13]
+albedo_texture = ExtResource( 6 )
+
+[sub_resource type="SpatialMaterial" id=14]
+albedo_texture = ExtResource( 7 )
+
+[sub_resource type="SpatialMaterial" id=15]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=16]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=17]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=18]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=19]
+albedo_texture = ExtResource( 9 )
+
+[sub_resource type="SpatialMaterial" id=20]
+albedo_texture = ExtResource( 9 )
+
+[sub_resource type="SpatialMaterial" id=21]
+albedo_texture = ExtResource( 9 )
+
+[sub_resource type="SpatialMaterial" id=22]
+albedo_texture = ExtResource( 10 )
+
+[sub_resource type="SpatialMaterial" id=23]
+albedo_texture = ExtResource( 11 )
+
+[sub_resource type="SpatialMaterial" id=24]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=25]
+albedo_texture = ExtResource( 12 )
+
+[sub_resource type="SpatialMaterial" id=26]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=27]
+albedo_texture = ExtResource( 12 )
+
+[sub_resource type="SpatialMaterial" id=28]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=29]
+albedo_texture = ExtResource( 13 )
+
+[sub_resource type="SpatialMaterial" id=30]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=31]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=32]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=33]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=34]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=35]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=36]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=37]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=38]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=39]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=40]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=41]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=42]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=43]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=44]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="SpatialMaterial" id=45]
+albedo_texture = ExtResource( 15 )
+
+[sub_resource type="SpatialMaterial" id=46]
+albedo_texture = ExtResource( 16 )
+
+[sub_resource type="SpatialMaterial" id=47]
+albedo_texture = ExtResource( 11 )
+
+[sub_resource type="SpatialMaterial" id=48]
+albedo_texture = ExtResource( 10 )
+
+[sub_resource type="SpatialMaterial" id=49]
+albedo_texture = ExtResource( 11 )
+
+[sub_resource type="SpatialMaterial" id=50]
+albedo_texture = ExtResource( 10 )
+
+[sub_resource type="SpatialMaterial" id=51]
+albedo_texture = ExtResource( 10 )
+
+[sub_resource type="SpatialMaterial" id=52]
+albedo_texture = ExtResource( 10 )
+
+[sub_resource type="SpatialMaterial" id=53]
+albedo_texture = ExtResource( 11 )
+
+[sub_resource type="SpatialMaterial" id=54]
+albedo_texture = ExtResource( 17 )
+
+[node name="ubu" type="Spatial"]
+
+[node name="room" type="Spatial" parent="."]
+visible = false
+
+[node name="MeshInstance" type="MeshInstance" parent="room"]
+editor/display_folded = true
+transform = Transform( -4.37114e-008, 0.0174524, 0.999848, 0, 0.999848, -0.0174524, -1, -7.62869e-010, -4.37047e-008, 0, 1, 0 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="StaticBody" type="StaticBody" parent="room/MeshInstance"]
+
+[node name="CollisionShape" type="CollisionShape" parent="room/MeshInstance/StaticBody"]
+shape = SubResource( 3 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="room"]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 0.612553, 25.2488, 50.1798 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="room/MeshInstance2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="room/MeshInstance2/StaticBody"]
+shape = SubResource( 5 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="room"]
+editor/display_folded = true
+transform = Transform( 1, 0, -7.62869e-010, -7.62869e-010, -4.37047e-008, -1, 0, 1, -4.37047e-008, 0, 25, -50 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="room/MeshInstance3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="room/MeshInstance3/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="room"]
+editor/display_folded = true
+transform = Transform( -4.37114e-008, -1, -4.37114e-008, 0, -4.37114e-008, 1, -1, 4.37114e-008, 1.91069e-015, 50, 25, 0 )
+mesh = SubResource( 8 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="room/MeshInstance4"]
+
+[node name="CollisionShape" type="CollisionShape" parent="room/MeshInstance4/StaticBody"]
+shape = SubResource( 9 )
+
+[node name="MeshInstance5" type="MeshInstance" parent="room"]
+editor/display_folded = true
+transform = Transform( -4.37114e-008, 1, 4.37114e-008, 0, -4.37114e-008, 1, 1, 4.37114e-008, 1.91069e-015, -50, 25, 0 )
+mesh = SubResource( 10 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="room/MeshInstance5"]
+
+[node name="CollisionShape" type="CollisionShape" parent="room/MeshInstance5/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="MeshInstance6" type="MeshInstance" parent="room"]
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.04305, -3.88996, -2.54946 )
+
+[node name="targets" type="Spatial" parent="."]
+
+[node name="Target_Whole" parent="targets" instance=ExtResource( 3 )]
+transform = Transform( 0.691904, 0.0455774, -0.720549, -0.0456146, 0.998771, 0.0193747, 0.720547, 0.0194621, 0.693133, -8.73832, 13.6011, 38.1285 )
+
+[node name="Target_Whole4" parent="targets" instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 8.84482, 21.3603, -30.3927 )
+
+[node name="Target_Whole5" parent="targets" instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, -13.6975, 9.80825, -37.0783 )
+
+[node name="Target_Whole2" parent="targets" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, -38.4233, 11.0146, -21.0501 )
+
+[node name="Target_Whole8" parent="targets" instance=ExtResource( 3 )]
+transform = Transform( -2.62268e-008, 0, -0.6, 0, 0.6, 0, 0.6, 0, -2.62268e-008, -21.7608, 11.4566, 5.5588 )
+
+[node name="Target_Whole3" parent="targets" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 40.0703, 4.23548, 5.0167 )
+
+[node name="Target_Whole7" parent="targets" instance=ExtResource( 3 )]
+transform = Transform( -0.707107, 6.18172e-008, 0.707107, -8.74228e-008, -1, 0, 0.707107, -6.18172e-008, 0.707107, 16.4621, 13.9922, 33.2381 )
+
+[node name="Target_Whole9" parent="targets" instance=ExtResource( 3 )]
+transform = Transform( -2.62268e-008, 0, 0.6, 0, 0.8, 0, -0.6, 0, -2.62268e-008, 24.0512, 14.3828, 16.2463 )
+
+[node name="Target_Whole6" parent="targets" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 23.3933, 8.93935, -6.12626 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( 2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 3.73297, 0, 8.54156 )
+
+[node name="Scene3" type="MeshInstance" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -85.9708, 0.15268, -16.6707 )
+mesh = ExtResource( 4 )
+material/0 = SubResource( 12 )
+material/1 = SubResource( 13 )
+material/2 = SubResource( 14 )
+material/3 = SubResource( 15 )
+material/4 = SubResource( 16 )
+material/5 = SubResource( 17 )
+material/6 = SubResource( 18 )
+material/7 = SubResource( 19 )
+material/8 = SubResource( 20 )
+material/9 = SubResource( 21 )
+material/10 = SubResource( 22 )
+material/11 = SubResource( 23 )
+material/12 = SubResource( 24 )
+material/13 = SubResource( 25 )
+material/14 = SubResource( 26 )
+material/15 = SubResource( 27 )
+material/16 = SubResource( 28 )
+material/17 = SubResource( 29 )
+material/18 = SubResource( 30 )
+material/19 = SubResource( 31 )
+material/20 = SubResource( 32 )
+material/21 = SubResource( 33 )
+material/22 = SubResource( 34 )
+material/23 = SubResource( 35 )
+material/24 = SubResource( 36 )
+material/25 = SubResource( 37 )
+material/26 = SubResource( 38 )
+material/27 = SubResource( 39 )
+material/28 = SubResource( 40 )
+material/29 = SubResource( 41 )
+material/30 = SubResource( 42 )
+material/31 = SubResource( 43 )
+material/32 = SubResource( 44 )
+material/33 = ExtResource( 14 )
+material/34 = ExtResource( 14 )
+material/35 = ExtResource( 14 )
+material/36 = ExtResource( 14 )
+material/37 = ExtResource( 14 )
+material/38 = ExtResource( 14 )
+material/39 = ExtResource( 14 )
+material/40 = ExtResource( 14 )
+material/41 = ExtResource( 14 )
+material/42 = ExtResource( 14 )
+material/43 = ExtResource( 14 )
+material/44 = ExtResource( 14 )
+material/45 = ExtResource( 14 )
+material/46 = ExtResource( 14 )
+material/47 = ExtResource( 14 )
+material/48 = ExtResource( 14 )
+material/49 = ExtResource( 14 )
+material/50 = ExtResource( 14 )
+material/51 = ExtResource( 14 )
+material/52 = ExtResource( 14 )
+material/53 = ExtResource( 14 )
+material/54 = ExtResource( 14 )
+material/55 = ExtResource( 14 )
+material/56 = ExtResource( 14 )
+material/57 = ExtResource( 14 )
+material/58 = ExtResource( 14 )
+material/59 = ExtResource( 14 )
+material/60 = ExtResource( 14 )
+material/61 = ExtResource( 14 )
+material/62 = ExtResource( 14 )
+material/63 = ExtResource( 14 )
+material/64 = ExtResource( 14 )
+material/65 = ExtResource( 14 )
+material/66 = ExtResource( 14 )
+material/67 = ExtResource( 14 )
+material/68 = ExtResource( 14 )
+material/69 = ExtResource( 14 )
+material/70 = ExtResource( 14 )
+material/71 = ExtResource( 14 )
+material/72 = ExtResource( 14 )
+material/73 = ExtResource( 14 )
+material/74 = ExtResource( 14 )
+material/75 = ExtResource( 14 )
+material/76 = ExtResource( 14 )
+material/77 = ExtResource( 14 )
+material/78 = ExtResource( 14 )
+material/79 = ExtResource( 14 )
+material/80 = ExtResource( 14 )
+material/81 = ExtResource( 14 )
+material/82 = ExtResource( 14 )
+material/83 = ExtResource( 14 )
+material/84 = ExtResource( 14 )
+material/85 = SubResource( 45 )
+material/86 = SubResource( 46 )
+material/87 = ExtResource( 14 )
+material/88 = SubResource( 47 )
+material/89 = SubResource( 48 )
+material/90 = SubResource( 49 )
+material/91 = SubResource( 50 )
+material/92 = SubResource( 51 )
+material/93 = SubResource( 52 )
+material/94 = SubResource( 53 )
+material/95 = SubResource( 54 )
+material/96 = ExtResource( 14 )
+material/97 = ExtResource( 14 )
+material/98 = ExtResource( 14 )
+material/99 = ExtResource( 14 )
+material/100 = ExtResource( 14 )
+material/101 = ExtResource( 14 )
+material/102 = ExtResource( 14 )
+material/103 = ExtResource( 14 )
+material/104 = ExtResource( 14 )
+material/105 = ExtResource( 14 )
+material/106 = ExtResource( 14 )
+material/107 = ExtResource( 14 )
+material/108 = ExtResource( 14 )
+material/109 = ExtResource( 14 )
+material/110 = ExtResource( 14 )
+material/111 = ExtResource( 14 )
+material/112 = ExtResource( 14 )
+material/113 = ExtResource( 14 )
+material/114 = ExtResource( 14 )
+material/115 = ExtResource( 14 )
+material/116 = ExtResource( 14 )
+material/117 = ExtResource( 14 )
+material/118 = ExtResource( 14 )
+material/119 = ExtResource( 14 )
+material/120 = ExtResource( 14 )
+material/121 = ExtResource( 14 )
+material/122 = ExtResource( 14 )
+material/123 = ExtResource( 14 )
+material/124 = ExtResource( 14 )
+material/125 = ExtResource( 14 )
+material/126 = ExtResource( 14 )
+material/127 = ExtResource( 14 )
+material/128 = ExtResource( 14 )
+material/129 = ExtResource( 14 )
+material/130 = ExtResource( 14 )
+material/131 = ExtResource( 14 )
+material/132 = ExtResource( 14 )
+material/133 = ExtResource( 14 )
+material/134 = ExtResource( 14 )
+material/135 = ExtResource( 14 )
+material/136 = ExtResource( 14 )
+material/137 = ExtResource( 14 )
+material/138 = ExtResource( 14 )
+material/139 = ExtResource( 14 )
+material/140 = ExtResource( 14 )
+material/141 = ExtResource( 14 )
+material/142 = ExtResource( 14 )
+material/143 = ExtResource( 14 )
+material/144 = ExtResource( 14 )
+material/145 = ExtResource( 14 )
+material/146 = ExtResource( 14 )
+material/147 = ExtResource( 14 )
+material/148 = ExtResource( 14 )
+material/149 = ExtResource( 14 )
+material/150 = ExtResource( 14 )
+material/151 = ExtResource( 14 )
+material/152 = ExtResource( 14 )
+material/153 = ExtResource( 14 )
+material/154 = ExtResource( 14 )
+material/155 = ExtResource( 14 )
+material/156 = ExtResource( 14 )
+material/157 = ExtResource( 14 )
+material/158 = ExtResource( 14 )
+material/159 = ExtResource( 14 )
+material/160 = ExtResource( 14 )
+material/161 = ExtResource( 14 )
+material/162 = ExtResource( 14 )
+material/163 = ExtResource( 14 )
+material/164 = ExtResource( 14 )
+material/165 = ExtResource( 14 )
+material/166 = ExtResource( 14 )
+material/167 = ExtResource( 14 )
+material/168 = ExtResource( 14 )
+material/169 = ExtResource( 14 )
+material/170 = ExtResource( 14 )
+material/171 = ExtResource( 14 )
+material/172 = ExtResource( 14 )
+material/173 = ExtResource( 14 )
+material/174 = ExtResource( 14 )
+material/175 = ExtResource( 14 )
+material/176 = ExtResource( 14 )
+material/177 = ExtResource( 14 )
+material/178 = ExtResource( 14 )
+material/179 = ExtResource( 14 )
+material/180 = ExtResource( 14 )
+material/181 = ExtResource( 14 )
+material/182 = ExtResource( 14 )
+
+[node name="Health_Pickup" parent="." instance=ExtResource( 18 )]
+transform = Transform( -3.49691e-008, 0, 1.8, 0, 0.8, 0, -0.8, 0, -7.86805e-008, 30.3411, 2.13186, -28.7181 )
+
+[node name="Health_Pickup2" parent="." instance=ExtResource( 18 )]
+transform = Transform( -2.62268e-008, 0, -0.6, 0, 0.8, 0, 0.6, 0, -2.62268e-008, -28.009, 1.88676, 12.449 )
+
+[node name="Health_Pickup3" parent="." instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 13.9762, 2.41878, 31.3775 )
+
+[node name="Turret" parent="." instance=ExtResource( 19 )]
+transform = Transform( -2.62268e-008, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-008, 30.1051, 1.52861, -16.5724 )
+
+[node name="Turret2" parent="." instance=ExtResource( 19 )]
+transform = Transform( -3.49691e-008, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.49691e-008, -32.3099, 1.56141, -1.62885 )
+
+[node name="Ammo_Pickup" parent="." instance=ExtResource( 20 )]
+transform = Transform( 2.62268e-008, -2.29282e-015, -0.8, -5.24537e-008, -0.6, 0, -0.6, 5.24537e-008, -3.49691e-008, -4.04056, 7.65681, 17.5901 )

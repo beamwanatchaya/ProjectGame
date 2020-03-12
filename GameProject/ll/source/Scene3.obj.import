@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Scene3.obj-b20423d50669fc50c1d7b30c8b368e24.mesh"
+
+[deps]
+
+files=[ "res://.import/Scene3.obj-b20423d50669fc50c1d7b30c8b368e24.mesh" ]
+
+source_file="res://ll/source/Scene3.obj"
+dest_files=[ "res://.import/Scene3.obj-b20423d50669fc50c1d7b30c8b368e24.mesh", "res://.import/Scene3.obj-b20423d50669fc50c1d7b30c8b368e24.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
